@@ -1,1 +1,15 @@
+- Tomcat invocation scripts
+  - catalina -> main Tomcat script, runs Java commands to start and shutdown
+  - cpappend -> windows only (?)
+  - digest -> makes crypto digest of Tomcat passwords
+  - service -> windows service only (?)
+  - setclasspath -> sets Tomcat classpath and other environmental variables
+  - shutdown -> runs "catalina stop" to shutdown Tomcat
+  - startup -> runs "catalina start" to start up Tomcat
+  - tool-wrapper -> generic command-line tool wrapper to set up environmental variables and then call the main method of any
+  fully qualified class in the classpath (used internally be digest)
+  - version -> run "catalina version" for Tomcat's version info
 
+- See chapter for setting size of memory, very important
+
+- There is a discussion of how to restart that will become relevant later.
