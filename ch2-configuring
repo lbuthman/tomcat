@@ -1,1 +1,15 @@
+- There are situations where you need to relocate different web app directories. One case is with custom configuration files;
+an upgrade to the system could overwrite files in default positions. Another is if more than one instance is being run
+simultaneously. Steps are found in book to relocate.
 
+- Default installation puts the port on 8080 -> change to 80 most likely, or relay TCP connections to 8080 using Service Wrapper
+
+- The heap settings for allocating memory are important to understand.
+  * If configured for a small starting heap memory size and a larger maximum size, page response will suffer while the Java
+  VM grows to its max size. This is because it takes time to reallocate memory chunks while Tomcat is trying to serve responses.
+  To solve, set -Xms and -Xmx to the same values
+  
+- The security of a web application's resources can be controlled by the container ("container-managed") or by the web app
+itself ("application-managed").
+
+- Users and Passwords are managed in groups called "realms".
