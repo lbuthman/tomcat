@@ -1,1 +1,11 @@
+What I Expect / Hope To Find
 
+  - An understanding of how to deploy a webapp in Tomcat in a way that is accessible with my public url.
+
+What I Actually Found
+
+In this chapter, we focus on three main webapp deployment scenarios:
+  - Deploying an unpackedwebapp directory into a Tomcat instance on the same machine.
+  - Deploying a WAR file into a Tomcat on the same machine.
+  - Deploying an unpackedwebapp directory or WAR file into a Tomcat instance (local or remote) over a TCP network 
+  connection to the Manager webapp.
