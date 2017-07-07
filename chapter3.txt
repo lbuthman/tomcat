@@ -1,6 +1,12 @@
 What I Expect / Hope To Find
 
   - An understanding of how to deploy a webapp in Tomcat in a way that is accessible with my public url.
+  
+Final Takeaway
+
+- I don't think this will work with Maven since the dir structure is very different.
+- What I really need is to continue build/test my webapp with Maven and other frameworks and then deploy a WAR or
+unpacked dir structure to dedicated webapp server, most likely in my Google Cloud.
 
 What I Actually Found
 
@@ -9,3 +15,10 @@ In this chapter, we focus on three main webapp deployment scenarios:
   - Deploying a WAR file into a Tomcat on the same machine.
   - Deploying an unpackedwebapp directory or WAR file into a Tomcat instance (local or remote) over a TCP network 
   connection to the Manager webapp.
+  
+<maybeRelevant>configURI in server.xml to target host. Is that my URL Domain or is the host something else that needs
+to be setup.</maybeRelevant>
+
+<strangeEncounters>Context, Host, Engine, standalone deployer program, buried paths for finding host and context XML
+fragments, Manager Web application for deployment, deploying WARs vs unpacked webapp dirs with a preference for unpacked
+webapp dirs</strangeEncounters>
